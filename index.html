@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shahklen Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    min-height: 75%;
+    animation: slideshow 10s infinite; /* Change every 8 seconds */
+  }
+
+  @keyframes slideshow {
+    0% {
+      background-image: url("image1.jpeg"); /* Initial background image */
+    }
+    20% {
+      background-image: url("image2.jpeg"); /* Image 2 */
+    }
+    40% {
+      background-image: url("image3.jpeg"); /* Image 3 */
+    }
+    60% {
+      background-image: url("image4.jpeg"); /* Image 4 */
+    }
+    80% {
+      background-image: url("image6.jpeg"); /* Image 4 */
+    }
+    100% {
+      background-image: url("image1.jpeg"); /* Back to the first image */
+    }
+  }
+  
+
+
+    .menu {
+    display: none;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s4">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s4">
+      <a href="gallary.html" class="w3-button w3-block w3-black">GALLARY</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <!-- <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 6am to 5pm</span>
+  </div> -->
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:100px">Shahklen</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT SHAHKLEN</span></h5>
+    <p>Shahklen is primarily an agricultural company that specializes in producing vegetables like tomatoes and capsicum. Its total area under cultivation is approximately 350 acres.
+    </p>
+   
+    <img src="image5.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WORK DONE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Farming');" id="myLink">
+        <div class="w3-col s4 tablink">Farming</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Mining');">
+        <div class="w3-col s4 tablink">Mining</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Exporting');">
+        <div class="w3-col s4 tablink">Exporting</div>
+      </a>
+    </div>
+
+    <div id="Farming" class="w3-container menu w3-padding-48 w3-card">
+      <ul>
+        <li>Tomato and Capsicum</li>
+      </ul>
+    </div>
+
+    <div id="Mining" class="w3-container menu w3-padding-48 w3-card">
+        <ul>
+            <li>
+                Rocks
+            </li>
+        </ul>
+    </div>  
+
+    <div id="Exporting" class="w3-container menu w3-padding-48 w3-card">
+        <ul>
+            <li>
+                Teek Wood
+            </li>
+        </ul>
+      </div>
+
+</div>
+<br>
+
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2>OUR TEAM</h2>
+    <p>Meet the team - main pillars</p>
+    <div class="w3-row w3-center"><br>
+        <div class="w3-half">
+            <img src="kobbi.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>DATO SERI Kobbi Eilangko</h3>
+            <p>Managing Director</p>
+        </div>
+        <div class="w3-half">
+            <img src="eilangko.jpeg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h3>Eilangko Chettiannan</h3>
+            <p>Managing Director</p>
+        </div>
+    </div>
+</div>
+
+
+<hr style="color: black;">
+
+
+
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+    <div class="w3-row">
+      <div class="w3-col m5">
+      <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+        <h3>Address</h3>
+        <p>No.18, Jalan Sekolah Kampung Raja, 39010 Tanah Rata, Cameron Highlands, Pahang, Malaysia.</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>+60 19-576 1851</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>shahklen@yahoo.com</p>
+      </div>
+      <div class="w3-col m7">
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">      
+          <label>Name</label>
+          <input class="w3-input" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">      
+          <label>Email</label>
+          <input class="w3-input" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">      
+          <label>Message</label>
+          <input class="w3-input" type="text" name="Message" required>
+        </div>  
+        <input class="w3-check" type="checkbox" checked name="Like">
+        <label>I Like it!</label>
+        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

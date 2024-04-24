@@ -39,8 +39,6 @@ body, html {
       background-image: url("image1.jpeg"); /* Back to the first image */
     }
   }
-  
-
 
     .menu {
     display: none;
@@ -72,7 +70,7 @@ body, html {
     <span class="w3-tag">Open from 6am to 5pm</span>
   </div> -->
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:100px">Shahklen</span>
+    <span class="w3-text-white" style="font-size:80px">Shahklen</span>
   </div>
 </header>
 
@@ -125,9 +123,7 @@ body, html {
 
     <div id="Exporting" class="w3-container menu w3-padding-48 w3-card">
         <ul>
-            <li>
-                Teek Wood
-            </li>
+          <li>Teek Wood</li>
         </ul>
       </div>
 
@@ -169,24 +165,25 @@ body, html {
         <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>shahklen@yahoo.com</p>
       </div>
       <div class="w3-col m7">
-        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-        <div class="w3-section">      
-          <label>Name</label>
-          <input class="w3-input" type="text" name="Name" required>
-        </div>
-        <div class="w3-section">      
-          <label>Email</label>
-          <input class="w3-input" type="text" name="Email" required>
-        </div>
-        <div class="w3-section">      
-          <label>Message</label>
-          <input class="w3-input" type="text" name="Message" required>
-        </div>  
-        <input class="w3-check" type="checkbox" checked name="Like">
-        <label>I Like it!</label>
-        <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+        <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="mailto:your-email@gmail.com" method="post" enctype="text/plain">
+            <div class="w3-section">      
+                <label>Name</label>
+                <input class="w3-input" type="text" name="Name" required>
+            </div>
+            <div class="w3-section">      
+                <label>Email</label>
+                <input class="w3-input" type="text" name="Email" required>
+            </div>
+            <div class="w3-section">      
+                <label>Message</label>
+                <textarea class="w3-input" name="Message" required></textarea>
+            </div>  
+            <input class="w3-check" type="checkbox" checked name="Like">
+            <label>I Like it!</label>
+            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
         </form>
-      </div>
+    </div>
+    
     </div>
   </div>
 </footer>
